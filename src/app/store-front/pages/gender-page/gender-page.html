@@ -9,4 +9,5 @@
     }
 </div>
 
-<h1>{{ gender() }}</h1>
+<app-pagination [totalPages]="productsResource.value()?.pages ?? 0"
+    [currentPage]="paginationService.currentPage()"/>
